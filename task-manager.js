@@ -1,8 +1,9 @@
-let tasks = [];
+function viewTaskList() {
+    console.log("Task List:");
 
-function addTask(task) {
-    tasks.push(task);
-    console.log("Task added: " + task);
+    tasks.forEach(function(task, index) {
+        console.log(index + 1 + ". " + task.name);
+    });
 }
 
-addTask("Complete assignment");
+viewTaskList();
