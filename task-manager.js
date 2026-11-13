@@ -1,4 +1,5 @@
-let tasks = [];
+function viewTaskList() {
+    console.log("Task List:");
 
 function addTask(name) {
     tasks.push({
